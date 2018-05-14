@@ -1,0 +1,51 @@
+<header class="mdc-toolbar">
+    <div class="mdc-toolbar__row">
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+            <a href="#" class="material-icons mdc-toolbar__menu-icon menu-toggle">menu</a>
+            <a href="index.html" class="mdc-toolbar__title">
+                <svg class="chrome" width="156" height="36">
+                    <use xlink:href="#test"></use>
+                </svg>
+            </a>
+        </section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+            <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download">
+                <svg class="chrome" width="48" height="48">
+                    <use xlink:href="#user-box"></use>
+                </svg>
+            </a>
+        </section>
+    </div>
+    <div class="mdc-toolbar__row mdc-toolbar__row--custom">
+        <section id="dynamic-demo-toolbar">
+            <nav id="dynamic-tab-bar" class="mdc-tab-bar" role="tablist">
+                <a role="tab" aria-controls="panel-1"
+                   class="mdc-tab" href="#panel-1">Шаблоны</a>
+                <a role="tab" aria-controls="panel-2"
+                   class="mdc-tab mdc-tab--active" href="#panel-2">Мои сайты</a>
+                <a role="tab" aria-controls="panel-3"
+                   class="mdc-tab" href="#panel-3">Настройки</a>
+                <a role="tab" aria-controls="panel-3"
+                   class="mdc-tab" href="#panel-3">Платежи</a>
+                <span class="mdc-tab-bar__indicator mdc-tab-bar__indicator--blue"></span>
+            </nav>
+        </section>
+    </div>
+</header>
+<aside class="mdc-drawer mdc-drawer--temporary mdc-typography">
+    <nav class="mdc-drawer__drawer">
+        <header class="mdc-drawer__header">
+            <div class="mdc-drawer__header-content">
+                Header here
+            </div>
+        </header>
+        <nav id="icon-with-text-demo" class="mdc-drawer__content mdc-list">
+            <a class="mdc-list-item mdc-list-item--activated" href="#">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>Inbox
+            </a>
+            <a class="mdc-list-item" href="#">
+                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>Star
+            </a>
+        </nav>
+    </nav>
+</aside>

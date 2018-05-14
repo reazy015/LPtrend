@@ -1,0 +1,13 @@
+.mdc-toolbar__row--custom {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  min-height: 48px!important;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+}
+.mdc-tab-bar__indicator--blue {
+  background-color: blue!important;
+}
+.mdc-tab--active {
+  color: blue!important;
+}
