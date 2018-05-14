@@ -1,4 +1,22 @@
 .cards-container {
-  max-width: 1260px;
+  max-width: 1080px;
   margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 25px;
+  padding-left: 36px;
+  padding-right: 36px;
+
+  @media (max-width: 1280px) {
+    max-width: 840px;
+  }
+
+  @media (max-width: 880px) {
+    max-width: 600px;
+    justify-content: center;
+  }
+}
+.dashed {
+  fill: tranparent;
 }

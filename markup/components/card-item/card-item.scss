@@ -1,0 +1,40 @@
+.card-preview-img {
+  width: 100%;
+  height: auto;
+}
+.card-info {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.card-info__header,
+.card-info__date {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.card-info__date {
+  margin-top: 21px;
+  margin-bottom: 4px;
+  color: $caption;
+}
+.card-info__header {
+  margin-top: 0;
+  margin-bottom: 39px;
+  color: $title;
+  font-weight: bold!important;
+}
+.card-wrapper {
+  flex: 0 0 240px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+
+  &:last-of-type {
+    margin-right: 0px
+  }
+}
+.my-card {
+  background-image: url(__static__/content/card-preview.png);
+}
+.my-card.mdc-card__media--16-9:before {
+  margin-top: 70%!important;
+}
+
