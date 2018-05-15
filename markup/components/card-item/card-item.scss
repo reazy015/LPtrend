@@ -15,12 +15,20 @@
   margin-top: 21px;
   margin-bottom: 4px;
   color: $caption;
+
+  @media (max-width: 600px) {
+    margin-top: 0;
+  }
 }
 .card-info__header {
   margin-top: 0;
   margin-bottom: 39px;
   color: $title;
   font-weight: bold!important;
+
+  @media (max-width: 600px) {
+    margin-bottom: 0px;
+  }
 }
 .card-wrapper {
   flex: 0 0 240px;
@@ -30,11 +38,42 @@
   &:last-of-type {
     margin-right: 0px
   }
+
+  @media (max-width: 600px) {
+    margin: 0;
+    flex: 1 1 auto;
+    height: 104px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
 }
 .my-card {
-  background-image: url(__static__/content/card-preview.png);
+  @media (max-width: 600px) {
+    justify-content: space-between;
+    padding: 14px 16px 16px 16px;
+    align-items: flex-start;
+
+    & .mdc-card__actions {
+      display: none;
+
+    }
+  }
 }
-.my-card.mdc-card__media--16-9:before {
+.my-card.mdc-card {
+  @media (max-width: 600px) {
+    flex-direction: row-reverse;
+    box-shadow: none;
+  }
+}
+.my-card__media {
+  background-image: url(__static__/content/card-preview.png);
+
+  @media (max-width: 600px) {
+    flex: 0 0 96px;
+    height: 72px;
+    margin-top: 2px;
+  }
+}
+.my-card__media.mdc-card__media--16-9:before {
   margin-top: 70%!important;
 }
 
