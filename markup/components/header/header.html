@@ -1,25 +1,20 @@
 <header class="mdc-toolbar">
     <div class="mdc-toolbar__row">
         <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-            <a href="#" class="material-icons mdc-toolbar__menu-icon menu-toggle">
-                <span>
-                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z" fill="white"/>
-                    </svg>
+            <a href="#" class="material-icons mdc-toolbar__menu-icon menu-toggle menu-toggle--custom">
+                <span class="menu-toggle__btn">
+                     {{Icon iconName='menu-burget-btn-icon' iconWidth='48' iconHeight='48'}}
+
                     <span> Меню</span>
                 </span>
             </a>
-            <a href="index.html" class="mdc-toolbar__title">
-                <svg class="chrome" width="156" height="36">
-                    <use xlink:href="#test"></use>
-                </svg>
+            <a href="index.html" class="mdc-toolbar__title mdc-toolbar__title--custom">
+                {{Icon iconName='logo-icon' iconWidth='157' iconHeight='36'}}
             </a>
         </section>
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-            <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download">
-                <svg class="chrome" width="48" height="48">
-                    <use xlink:href="#user-box"></use>
-                </svg>
+            <a href="#" class="material-icons mdc-top-app-bar__action-item my-material-icon" aria-label="Download" alt="Download">
+                {{Icon iconName='icon-avatar' iconWidth='70' iconHeight='70'}}
             </a>
         </section>
     </div>
@@ -39,19 +34,43 @@
         </section>
     </div>
 </header>
-<aside class="mdc-drawer mdc-drawer--temporary mdc-typography">
-    <nav class="mdc-drawer__drawer">
+<aside class="my-drawer mdc-drawer mdc-drawer--temporary mdc-typography">
+    <nav class="my-drawer__drawer mdc-drawer__drawer">
         <header class="mdc-drawer__header">
-            <div class="mdc-drawer__header-content">
-                Header here
+            <div class="mdc-drawer__header-content mdc-drawer__header-content--custom">
+                <div class="my-drawer-content">
+                    {{Icon iconName='drawer-menu-avatar' iconWidth='80' iconHeight='80'}}
+                    <div class="user-info">
+                        <span class="user-info__name">Иванов Иван</span>
+                        <span class="user-info__mail">ivanov@gmail.com</span>
+                    </div>
+                </div>
             </div>
         </header>
         <nav id="icon-with-text-demo" class="mdc-drawer__content mdc-list">
-            <a class="mdc-list-item mdc-list-item--activated" href="#">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>Inbox
+            <a class="mdc-list-item" href="#">
+                <i class="material-icons mdc-list-item__graphic mdc-list-item__graphic--custom" aria-hidden="true">
+                    {{Icon iconName='templates-icon' iconWidth='48' iconHeight='48'}}
+                </i>
+                Шаблоны
             </a>
             <a class="mdc-list-item" href="#">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>Star
+                <i class="material-icons mdc-list-item__graphic mdc-list-item__graphic--custom" aria-hidden="true">
+                    {{Icon iconName='sites-icon' iconWidth='48' iconHeight='48'}}
+                </i>
+                Мои сайты
+            </a>
+            <a class="mdc-list-item" href="#">
+                <i class="material-icons mdc-list-item__graphic mdc-list-item__graphic--custom" aria-hidden="true">
+                    {{Icon iconName='settings-icon' iconWidth='48' iconHeight='48'}}
+                </i>
+                Настройки
+            </a>
+            <a class="mdc-list-item" href="#">
+                <i class="material-icons mdc-list-item__graphic mdc-list-item__graphic--custom" aria-hidden="true">
+                    {{Icon iconName='payments' iconWidth='48' iconHeight='48'}}
+                </i>
+                Платежи
             </a>
         </nav>
     </nav>

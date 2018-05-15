@@ -2,9 +2,9 @@ module.exports = {
     "postcss": [],
     "svg": {
         "active": true,
-        "workflow": "symbol",
+        "workflow": "symbols",
         "symbolsConfig": {
-            "loadingType": "inject",
+            "loadingType": "separate-file-with-link",
             "usePolyfillForExternalSymbols": true,
             "pathToExternalSymbolsFile": ""
         }

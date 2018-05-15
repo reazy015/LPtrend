@@ -36,7 +36,15 @@
   margin-bottom: 24px;
 
   &:last-of-type {
-    margin-right: 0px
+    margin-right: 0px;
+
+    @media (max-width: 880px) {
+      margin-right: 24px;
+    }
+
+    @media (max-width: 600px) {
+      margin-right: 0;
+    }
   }
 
   @media (max-width: 600px) {
@@ -75,5 +83,8 @@
 }
 .my-card__media.mdc-card__media--16-9:before {
   margin-top: 70%!important;
+}
+.my-card .mdc-card__action--icon {
+  padding: 0;
 }
 
