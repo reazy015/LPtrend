@@ -24,7 +24,7 @@
   margin-top: 0;
   margin-bottom: 39px;
   color: $title;
-  font-weight: bold!important;
+  font-weight: 500!important;
 
   @media (max-width: 600px) {
     margin-bottom: 0px;
@@ -47,14 +47,50 @@
     }
   }
 
+  &:nth-of-type(2n) {
+    @media (max-width: 615px) {
+      margin-right: 0px;
+    }
+  }
+
   @media (max-width: 600px) {
     margin: 0;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     height: 104px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   }
 }
+.my-card__media.mdc-card__media--16-9:after  {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
 .my-card {
+  cursor: pointer;
+  transition: box-shadow .3s, background-color .3s;
+
+  &:hover {
+    @media (min-width: 600px) {
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.14);
+    }
+    @media (max-width: 600px) {
+      background-color: $card-hover;
+    }
+  }
+
+  &:hover > .my-card__media.mdc-card__media.mdc-card__media--16-9:after {
+    @media (min-width: 600px) {
+      background-image: url(__static__/content/card-hover.svg);
+    }
+  }
   @media (max-width: 600px) {
     justify-content: space-between;
     padding: 14px 16px 16px 16px;
@@ -75,6 +111,7 @@
 .my-card__media {
   background-image: url(__static__/content/card-preview.png);
 
+
   @media (max-width: 600px) {
     flex: 0 0 96px;
     height: 72px;
@@ -86,5 +123,27 @@
 }
 .my-card .mdc-card__action--icon {
   padding: 0;
+}
+.mdc-button.my-action-btn--color:not(:disabled) {
+  color: $basic-blue;
+}
+.mdc-button.my-action-btn {
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: background-color .3s, color .3s;
+
+  &:hover {
+    background-color: $basic-blue;
+    color: #fff;
+  }
+
+  &:active {
+    background-color: $light-blue-active;
+    color: #fff;
+  }
+}
+.my-card  .icon__delete-btn-icon:hover {
+  stroke: red;
+  fill-opacity: 0.1;
 }
 

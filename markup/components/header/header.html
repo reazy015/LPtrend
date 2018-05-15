@@ -1,24 +1,24 @@
 <header class="mdc-toolbar">
-    <div class="mdc-toolbar__row">
+    <div class="mdc-toolbar__row my-toolbar__row-decor"></div>
+    <div class="mdc-toolbar__row bg-basic-blue">
         <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
             <a href="#" class="material-icons mdc-toolbar__menu-icon menu-toggle menu-toggle--custom">
-                <span class="menu-toggle__btn">
-                     {{Icon iconName='menu-burget-btn-icon' iconWidth='48' iconHeight='48'}}
-
-                    <span> Меню</span>
-                </span>
+                 {{Icon iconName='menu-burget-btn-icon' iconWidth='48' iconHeight='48'}}
+            </a>
+            <a href="index.html" class="mdc-toolbar__title mdc-toolbar__title--mobile">
+                Мои сайты
             </a>
             <a href="index.html" class="mdc-toolbar__title mdc-toolbar__title--custom">
                 {{Icon iconName='logo-icon' iconWidth='157' iconHeight='36'}}
             </a>
         </section>
-        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-            <a href="#" class="material-icons mdc-top-app-bar__action-item my-material-icon" aria-label="Download" alt="Download">
-                {{Icon iconName='icon-avatar' iconWidth='70' iconHeight='70'}}
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end my-section-mobile" role="toolbar">
+            <a href="#" class="my-material-icon material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download">
+                {{Icon iconName='icon-avatar' iconWidth='48' iconHeight='48'}}
             </a>
         </section>
     </div>
-    <div class="mdc-toolbar__row mdc-toolbar__row--custom">
+    <div class="mdc-toolbar__row mdc-toolbar__row--custom my-app-toolbar-mobile">
         <section id="dynamic-demo-toolbar">
             <nav id="dynamic-tab-bar" class="mdc-tab-bar" role="tablist">
                 <a role="tab" aria-controls="panel-1"

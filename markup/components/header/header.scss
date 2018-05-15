@@ -25,6 +25,7 @@
   
   @media (max-width: 600px) {
     display: flex;
+    padding: 0;
   }
 
   & span.menu-toggle__btn {
@@ -35,14 +36,34 @@
     }
   }
 }
-.mdc-toolbar__title--custom {
+.menu-toggle__text {
+  font-size: 12px;
+  font-weight: 500;
+}
+.mdc-toolbar__title.mdc-toolbar__title--custom {
+  padding: 0;
   @media (max-width: 600px) {
     display: none;
   }
 }
+.mdc-toolbar__title--mobile {
+  display: none;
+  color: #fff;
+  
+  @media (max-width: 600px) {
+    display: block;
+    width: 110px;
+  }
+}
 .material-icons.my-material-icon {
-  width: 70px;
-  height: 70px;
+  width: 48px;
+  height: 48px;
+}
+.my-drawer__drawer .mdc-list-item {
+  padding-left: 8px;
+}
+.my-drawer__drawer.mdc-drawer__drawer{
+  max-width: 304px;
 }
 .my-drawer.mdc-drawer--temporary .mdc-drawer__header:before {
   padding-top: 70%;
@@ -62,7 +83,38 @@
   margin-top: 19px;
   color: #fff;
 }
+.user-info__name {
+  margin-bottom: 3px;
+}
 .mdc-list-item__graphic.mdc-list-item__graphic--custom {
   width: 48px;
   height: 48px;
+}
+.my-material-icon.mdc-top-app-bar__action-item {
+  padding: 0;
+
+  @media (max-width: 600px) {
+    padding: 6px;
+  }
+}
+.bg-basic-blue {
+  background-color: $basic-blue;
+}
+.my-app-toolbar-mobile {
+  overflow: hidden;
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+.my-toolbar__row-decor {
+  display: none;
+  @media (max-width: 600px) {
+    display: block;
+    min-height: 24px;
+    height:24px;
+    background-color: $dark-blue-app-bar;
+  }
+}
+.my-section-mobile {
+  flex: 0 1 100px;
 }
